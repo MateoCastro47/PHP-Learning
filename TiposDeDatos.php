@@ -12,10 +12,14 @@
     echo "Hola mundo mi nombre es: " . $nombre; // -> Concatenación normal
     echo "<br>"; // -> Salto de linea
     echo "Hola mundo mi nombre es: $Nombre"; // -> Interpolación
+    echo "<br>";
 
 
 
-    
+    //los booleanos son false o true, en haxadecimal true = 1 y false = 0
+    $bool = true;
+
+    echo $bool;
 
 
 ?>
