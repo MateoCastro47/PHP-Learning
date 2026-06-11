@@ -33,7 +33,7 @@
 
     $nombres = ["Victor", "Mateo", "Josefa", "Alba"];
 
-    foreach ($nombres as $nombre) {
+    foreach ($nombres as $key => $nombre) { // Pasas los datos que quieras recorrer de una variable a otra y la imprimes, la variable $Key guarda el indice en el que se encuentra el valor.
         echo $nombre . "<br>";
     };
 ?>
