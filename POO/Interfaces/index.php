@@ -1,10 +1,12 @@
 <?php
     require_once('clases/Tarjeta.php');
     require_once('clases/PayPal.php');
+    require_once('clases/Efectivo.php');
 
     // Creamos dos medios de pago DISTINTOS.
     $tarjeta = new Tarjeta("1234567812345678");
     $paypal  = new PayPal("mateo@email.com");
+    $efectivo = new Efectivo;
 
     // Cada uno paga a su manera, pero los dos entienden "pagar()".
     echo $tarjeta->pagar(50) . "<br>";
@@ -25,7 +27,7 @@
 
     procesarCompra($tarjeta, 100);   // le paso una Tarjeta
     procesarCompra($paypal, 200);    // le paso un PayPal -> la MISMA función vale
-
+    procesarCompra($efectivo, 50);
 
     /* ====== 🏋️ EJERCICIO PARA TI ======
        Crea una clase nueva "Efectivo" (en clases/Efectivo.php) que TAMBIÉN
